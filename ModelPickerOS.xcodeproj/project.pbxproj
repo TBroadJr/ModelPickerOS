@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F695A44C292C3199000E766C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F695A44B292C3199000E766C /* Model.swift */; };
+		F695A457292C376A000E766C /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = F695A456292C376A000E766C /* FocusEntity */; };
+		F695A45D292C3CD8000E766C /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F695A459292C3CD6000E766C /* teapot.usdz */; };
+		F695A463292C3D5D000E766C /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F695A460292C3D5D000E766C /* fender_stratocaster.usdz */; };
+		F695A464292C3D5D000E766C /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F695A461292C3D5D000E766C /* toy_biplane.usdz */; };
+		F695A465292C3D5D000E766C /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F695A462292C3D5D000E766C /* toy_robot_vintage.usdz */; };
 		F6F733452929BF6900F84B6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F733442929BF6900F84B6B /* AppDelegate.swift */; };
 		F6F733472929BF6900F84B6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F733462929BF6900F84B6B /* ContentView.swift */; };
 		F6F733492929BF6900F84B6B /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F6F733482929BF6900F84B6B /* Experience.rcproject */; };
@@ -35,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F695A44B292C3199000E766C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F695A459292C3CD6000E766C /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		F695A460292C3D5D000E766C /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		F695A461292C3D5D000E766C /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		F695A462292C3D5D000E766C /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
 		F6F733412929BF6900F84B6B /* ModelPickerOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPickerOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F733442929BF6900F84B6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F733462929BF6900F84B6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F695A457292C376A000E766C /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F67C40B8292ADE4A003FC29A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F695A460292C3D5D000E766C /* fender_stratocaster.usdz */,
+				F695A461292C3D5D000E766C /* toy_biplane.usdz */,
+				F695A462292C3D5D000E766C /* toy_robot_vintage.usdz */,
+				F695A459292C3CD6000E766C /* teapot.usdz */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F6F733382929BF6900F84B6B = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				F6F733442929BF6900F84B6B /* AppDelegate.swift */,
+				F67C40B8292ADE4A003FC29A /* Model */,
 				F6F733462929BF6900F84B6B /* ContentView.swift */,
+				F695A44B292C3199000E766C /* Model.swift */,
 				F6F733482929BF6900F84B6B /* Experience.rcproject */,
 				F6F7334A2929BF6C00F84B6B /* Assets.xcassets */,
 				F6F7334C2929BF6C00F84B6B /* Preview Content */,
@@ -146,6 +171,9 @@
 			dependencies = (
 			);
 			name = ModelPickerOS;
+			packageProductDependencies = (
+				F695A456292C376A000E766C /* FocusEntity */,
+			);
 			productName = ModelPickerOS;
 			productReference = F6F733412929BF6900F84B6B /* ModelPickerOS.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +246,9 @@
 				Base,
 			);
 			mainGroup = F6F733382929BF6900F84B6B;
+			packageReferences = (
+				F695A455292C376A000E766C /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = F6F733422929BF6900F84B6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,7 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F695A45D292C3CD8000E766C /* teapot.usdz in Resources */,
+				F695A464292C3D5D000E766C /* toy_biplane.usdz in Resources */,
+				F695A465292C3D5D000E766C /* toy_robot_vintage.usdz in Resources */,
 				F6F7334E2929BF6C00F84B6B /* Preview Assets.xcassets in Resources */,
+				F695A463292C3D5D000E766C /* fender_stratocaster.usdz in Resources */,
 				F6F7334B2929BF6C00F84B6B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +298,7 @@
 				F6F733472929BF6900F84B6B /* ContentView.swift in Sources */,
 				F6F733452929BF6900F84B6B /* AppDelegate.swift in Sources */,
 				F6F733492929BF6900F84B6B /* Experience.rcproject in Sources */,
+				F695A44C292C3199000E766C /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +627,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F695A455292C376A000E766C /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F695A456292C376A000E766C /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F695A455292C376A000E766C /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6F733392929BF6900F84B6B /* Project object */;
 }
